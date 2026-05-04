@@ -5,8 +5,8 @@ import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 
 @Entity
-@Table(name = "ECOM_CUSTOMERS")
-@SequenceGenerator(name = "customer_seq", sequenceName = "ECOM_CUSTOMER_SEQ", allocationSize = 1)
+@Table(name = "ECOM_CUSTOMERS", schema = "ECOM_APP")
+@SequenceGenerator(name = "customer_seq", sequenceName = "ECOM_APP.ECOM_CUSTOMER_SEQ", allocationSize = 1)
 public class Customer {
 
     @Id
